@@ -1,0 +1,98 @@
+Question1 to 4. class CalculateG {
+    public static void main(String[] arguments) {
+        double gravity = -9.81; // Earth's gravity in m/s^2
+        double fallingTime = 30;
+        double initialVelocity = 0.0;
+        double finalVelocity = gravity * fallingTime + initialVelocity;
+        double initialPosition = 0.0;
+        double finalPosition = 0.5 * gravity * Math.pow(fallingTime, 2) + initialVelocity * fallingTime + initialPosition;
+
+        // Output the object's position and velocity after falling for 30 seconds
+        System.out.println("The object's position after " + fallingTime + " seconds is " + finalPosition + " m.");
+        System.out.println("The object's velocity after " + fallingTime + " seconds is " + finalVelocity + " m/s.");
+    }
+}
+
+In the modified code, the initial values for gravity, fallingTime, and initialVelocity are declared as doubles. The finalVelocity and finalPosition are calculated using the formulas for velocity and position given in the problem statement. The Math.pow() method is used to calculate the square of the falling time. Finally, the position and velocity are output using System.out.println().
+
+
+5.public class CalculateG {
+    public static void main(String[] args) {
+        double gravity = -9.81; // Earth's gravity in m/s^2
+        double fallingTime = 30.0;
+        double initialVelocity = 0.0;
+        double finalVelocity;
+        double initialPosition = 0.0;
+        double finalPosition;
+
+        // Calculate final position
+        finalPosition = 0.5 * gravity * square(fallingTime) + initialVelocity * fallingTime + initialPosition;
+
+        // Calculate final velocity
+        finalVelocity = gravity * fallingTime + initialVelocity;
+
+        // Output the results
+        outline("The object's position after " + fallingTime + " seconds is " + finalPosition + " m.");
+        outline("The object's velocity after " + fallingTime + " seconds is " + finalVelocity + " m/s.");
+    }
+
+    public static double multi(double x, double y) {
+        return x * y;
+    }
+
+    public static double square(double x) {
+        return x * x;
+    }
+
+    public static double sum(double x, double y) {
+        return x + y;
+    }
+
+    public static void outline(String message) {
+        System.out.println(message);
+    }
+}
+
+The multi method takes in two double arguments and returns their product.
+The square method takes in a double argument and returns its square.
+The sum method takes in two double arguments and returns their sum.
+The outline method takes in a string message and prints it out to the console.
+
+
+
+
+6. public class CalculateG {
+    public static double multiply(double a, double b) {
+        // method for multiplication
+        return a * b;
+    }
+
+    public static double powerToSquare(double a) {
+        // method for powering to square
+        return a * a;
+    }
+
+    public static double sum(double a, double b) {
+        // method for summation
+        return a + b;
+    }
+
+    public static void outline(double result) {
+        // method for printing out a result
+        System.out.println("The result is: " + result);
+    }
+
+    public static void main(String[] args) {
+        // example usage
+        double x = 5.0;
+        double y = 3.0;
+        double z = multiply(x, y);
+        outline(z);
+        z = powerToSquare(x);
+        outline(z);
+        z = sum(x, y);
+        outline(z);
+    }
+}
+
+multiply method takes two double arguments and returns their product, the power to square method takes a single double argument and returns its square, and the sum method takes two double arguments and returns their sum. The outline method takes a single double argument and prints out a message along with the value of the argument.
