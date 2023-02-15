@@ -1,1 +1,1 @@
-# java-prigramming-assignment.com
+# java-programming-assignment.com
